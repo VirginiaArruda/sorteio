@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {  
+  height: 100vh;
+  background-color:#6BEFA3;
+  display: flex;
+}
+
+.draw-description {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;  
+  flex-direction: column;
+  padding: 50px 50px;
+}
+
+.draw-description select {
+    width: 200px;
+    height: 32px;
+    padding: 4px;
+    line-height: 32px;
+    text-indent: 4px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.selected-draw-container {
+  display: flex;
+  align-items: center;
+}
+
+.selected-draw-container img {
+  width: 50px;
+}
+
+.selected-draw-container h1 {
+  color: #FFF;
+  font-size: 16px;
+  padding-left: 15px;
+  text-transform: uppercase;
+}
+
+
+
+.competition {
+  color: #FFF;
+}
+
+.competition p {
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.competition-number {
+  font-weight: 700;
+}
+
+.numbers {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #EFEFEF;
+  position: absolute;
+  width: 100%;
+  height: 300%;
+  border-radius: 50%;
+  top: -600px;
+  right: -400px;
+  padding-left: 100px;
+}
+
+.numbers-drawn {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60%;
+}
+
+.information {
+  margin-left: 50px;
+  position: fixed;
+  bottom: 50px;
+  font-size: 12px;
+}
+
+
+.numbers-drawn p {
+  margin: 20px;
+  background-color: #FFF;
+  color: rgb(71, 71, 71);
+  border-radius: 50px;
+  padding: 15px;
+  font-weight: 700;
+}
+
